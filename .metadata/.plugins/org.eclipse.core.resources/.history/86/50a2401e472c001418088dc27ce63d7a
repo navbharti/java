@@ -1,0 +1,311 @@
+'''
+Created on Aug 20, 2014
+
+@author: rajni
+'''
+from math import sqrt, pow
+
+class DBSCAN:
+    def __init__(self):
+        self.name = 'DBSCAN'
+        self.DB = [] #Database
+        self.esp = 0.01153309 #neighborhood distance for search
+        self.MinPts = 4 #minimum number of points required to form a cluster
+        self.cluster_inx = -1
+        self.cluster = []
+        
+    def DBSCAN(self):
+        for i in range(len(self.DB)):
+            p_tmp = self.DB[i]
+            print str(i) + " Point" + str(p_tmp.show())
+            if (not p_tmp.visited):
+                #for each unvisited point P in dataset
+                p_tmp.visited = True
+                NeighborPts = self.regionQuery(p_tmp)
+                print "NeighnorPts of ", p_tmp.show(), ": " + str(len(NeighborPts))
+                for pi in NeighborPts:
+                    print pi.show()
+                if(len(NeighborPts) < self.MinPts):
+                    #that point is a noise
+                    p_tmp.isnoise = True
+                    print p_tmp.show(), 'is a noise'
+                else:
+                    self.cluster.append([])
+                    self.cluster_inx = self.cluster_inx + 1
+                    self.expandCluster(p_tmp, NeighborPts)
+    
+    def expandCluster(self, P, neighbor_points):
+        self.cluster[self.cluster_inx].append(P)
+        iterator = iter(neighbor_points)
+        while True:
+            try:
+                npoint_tmp = iterator.next()
+            except StopIteration:
+                # StopIteration exception is raised after last element
+                break
+            if (not npoint_tmp.visited):
+                #for each point P' in NeighborPts
+                npoint_tmp.visited = True
+                NeighborPts_ = self.regionQuery(npoint_tmp)
+                print "NeighnorPts of ", npoint_tmp.show(), ": " + str(len(NeighborPts_))
+                for pi in NeighborPts_:
+                    print pi.show()
+                if (len(NeighborPts_) >= self.MinPts):
+                    for j in range(len(NeighborPts_)):
+                        neighbor_points.append(NeighborPts_[j])
+            if (not self.checkMembership(npoint_tmp)):
+                #if P' is not yet member of any cluster
+                self.cluster[self.cluster_inx].append(npoint_tmp)
+            else:
+                print npoint_tmp.show(), 'is belonged to some cluster'
+                                    
+    def checkMembership(self, P):
+        #will return True if point is belonged to some cluster
+        ismember = False
+        for i in range(len(self.cluster)):
+            for j in range(len(self.cluster[i])):
+                if (P.x == self.cluster[i][j].x and P.y == self.cluster[i][j].y):
+                    ismember = True
+        return ismember
+    
+    def regionQuery(self, P):
+        #return all points within P's eps-neighborhood, except itself
+        pointInRegion = []
+        for i in range(len(self.DB)):
+            p_tmp = self.DB[i]
+            if (self.dist(P, p_tmp) < self.esp and P.x != p_tmp.x and P.y != p_tmp.y):
+                pointInRegion.append(p_tmp)
+        return pointInRegion
+    
+    def dist(self, p1, p2):
+        #return distance between two point
+        dx = (p1.x - p2.x)
+        dy = (p1.y - p2.y)
+        return sqrt(pow(dx,2) + pow(dy,2))
+    
+class Point:
+    def __init__(self, id, x = 0, y = 0, visited = False, isnoise = False):
+        self.id = id
+        self.x = x
+        self.y = y
+        self.visited = False
+        self.isnoise = False
+            
+    def show(self):
+        return self.id, self.x, self.y
+    
+if __name__=='__main__':
+    #this is a mocking data just for test
+    '''vecPoint = [Point(11,3), Point(10,4), Point(11,5), Point(12,4), Point(13,5), Point(12,6), Point(6,10), Point(8,10), Point(5,12), Point(7,12)]'''
+    vecPoint = [Point(0,79.81784,11.93828),
+    Point(1,79.833258,11.931868),
+    Point(2,79.82954,11.93601),
+    Point(3,79.81276,11.91774),
+    Point(4,79.828444,11.933243),
+    Point(5,79.809889,11.954468),
+    Point(6,79.817583,11.931847),
+    Point(7,79.817588,11.938708),
+    Point(8,79.82618,11.93911),
+    Point(9,79.797794,11.930888),
+    Point(10,79.8284,11.93704),
+    Point(11,79.829437,11.935905),
+    Point(12,79.797794,11.930888),
+    Point(13,79.808377,11.941062),
+    Point(14,79.821902,11.938759),
+    Point(15,79.808863,11.9203),
+    Point(16,79.821894,11.93879),
+    Point(17,79.808377,11.941062),
+    Point(18,79.795673,11.942268),
+    Point(19,79.827737,11.92829),
+    Point(20,79.82716,11.94045),
+    Point(21,79.8223,11.93728),
+    Point(22,79.791754,11.930548),
+    Point(23,79.821902,11.938759),
+    Point(24,79.808863,11.9203),
+    Point(25,79.821894,11.93879),
+    Point(26,79.824718,11.932684),
+    Point(27,79.808377,11.941062),
+    Point(28,79.795673,11.942268),
+    Point(29,79.827737,11.92829),
+    Point(30,79.81811,11.95233),
+    Point(31,79.808863,11.9203),
+    Point(32,79.808207,11.906792),
+    Point(33,79.821894,11.93879),
+    Point(34,79.808228,11.938602),
+    Point(35,79.824718,11.932684),
+    Point(36,79.808377,11.941062),
+    Point(37,79.821665,11.928787),
+    Point(38,79.795673,11.942268),
+    Point(39,79.827737,11.92829),
+    Point(40,79.824718,11.932684),
+    Point(41,79.808377,11.941062),
+    Point(42,79.821665,11.928787),
+    Point(43,79.807009,11.932081),
+    Point(44,79.795673,11.942268),
+    Point(45,79.827898,11.925271),
+    Point(46,79.827737,11.92829),
+    Point(47,79.807734,11.931235),
+    Point(48,79.806049,11.931843),
+    Point(49,79.8127,11.9345),
+    Point(50,79.795673,11.942268),
+    Point(51,79.827898,11.925271),
+    Point(52,79.827737,11.92829),
+    Point(53,79.807009,11.932081),
+    Point(54,79.807734,11.931235),
+    Point(55,79.806049,11.931843),
+    Point(56,79.8127,11.9345),
+    Point(57,79.82563,11.934666),
+    Point(58,79.800351,11.942402),
+    Point(59,79.809229,11.948589),
+    Point(60,79.807734,11.931235),
+    Point(61,79.806049,11.931843),
+    Point(62,79.8127,11.9345),
+    Point(63,79.82563,11.934666),
+    Point(64,79.800351,11.942402),
+    Point(65,79.809229,11.948589),
+    Point(66,79.817847,11.949173),
+    Point(67,79.831443,11.947442),
+    Point(68,79.816883,11.958804),
+    Point(69,79.832,11.9396),
+    Point(70,79.844,11.9798),
+    Point(71,79.8459,11.9847),
+    Point(72,79.8106,12.0069),
+    Point(73,79.762717,11.754632),
+    Point(74,79.632254,11.870254),
+    Point(75,79.765364,11.772796),
+    Point(76,79.738977,11.747252),
+    Point(77,79.769327,11.720784),
+    Point(78,79.668209,11.77145),
+    Point(79,79.767757,11.714868),
+    Point(80,79.807734,11.931235),
+    Point(81,79.806049,11.931843),
+    Point(82,79.8127,11.9345),
+    Point(83,79.82563,11.934666),
+    Point(84,79.800351,11.942402),
+    Point(85,79.809229,11.948589),
+    Point(86,79.817847,11.949173),
+    Point(87,79.831443,11.947442),
+    Point(88,79.816883,11.958804),
+    Point(89,79.832,11.9396),
+    Point(90,79.806049,11.931843),
+    Point(91,79.8127,11.9345),
+    Point(92,79.82563,11.934666),
+    Point(93,79.800351,11.942402),
+    Point(94,79.809229,11.948589),
+    Point(95,79.817847,11.949173),
+    Point(96,79.831443,11.947442),
+    Point(97,79.816883,11.958804),
+    Point(98,79.832,11.9396),
+    Point(99,79.825595,11.934738),
+    Point(100,79.8127,11.9345),
+    Point(101,79.82563,11.934666),
+    Point(102,79.800351,11.942402),
+    Point(103,79.809229,11.948589),
+    Point(104,79.817847,11.949173),
+    Point(105,79.831443,11.947442),
+    Point(106,79.816883,11.958804),
+    Point(107,79.832,11.9396),
+    Point(108,79.825595,11.934738),
+    Point(109,79.8061,11.9426),
+    Point(110,79.82563,11.934666),
+    Point(111,79.800351,11.942402),
+    Point(112,79.809229,11.948589),
+    Point(113,79.817847,11.949173),
+    Point(114,79.831443,11.947442),
+    Point(115,79.816883,11.958804),
+    Point(116,79.832,11.9396),
+    Point(117,79.825595,11.934738),
+    Point(118,79.8061,11.9426),
+    Point(119,79.831041,11.933016),
+    Point(120,79.755761,11.913017),
+    Point(121,79.792282,11.863004),
+    Point(122,79.817847,11.949173),
+    Point(123,79.75145,11.90997),
+    Point(124,79.797745,11.930901),
+    Point(125,79.831443,11.947442),
+    Point(126,79.816883,11.958804),
+    Point(127,79.832,11.9396),
+    Point(128,79.825595,11.934738),
+    Point(129,79.8061,11.9426),
+    Point(130,79.742988,11.807723),
+    Point(131,79.816883,11.958804),
+    Point(132,79.782923,11.830376),
+    Point(133,79.777126,11.999135),
+    Point(134,79.832,11.9396),
+    Point(135,79.825595,11.934738),
+    Point(136,79.8061,11.9426),
+    Point(137,79.844,11.9798),
+    Point(138,79.8459,11.9847),
+    Point(139,79.797745,11.930901),
+    Point(140,79.832,11.9396),
+    Point(141,79.782923,11.830376),
+    Point(142,79.777126,11.999135),
+    Point(143,79.860073,12.019032),
+    Point(144,79.825595,11.934738),
+    Point(145,79.8061,11.9426),
+    Point(146,79.844,11.9798),
+    Point(147,79.8459,11.9847),
+    Point(148,79.8106,12.0069),
+    Point(149,79.797745,11.930901),
+    Point(150,79.777126,11.999135),
+    Point(151,79.860073,12.019032),
+    Point(152,79.8061,11.9426),
+    Point(153,79.75344,12.00083),
+    Point(154,79.763517,11.764293),
+    Point(155,79.761502,11.753263),
+    Point(156,79.761502,11.753263),
+    Point(157,79.844,11.9798),
+    Point(158,79.8459,11.9847),
+    Point(159,79.8106,12.0069),
+    Point(160,79.8061,11.9426),
+    Point(161,79.75344,12.00083),
+    Point(162,79.763517,11.764293),
+    Point(163,79.761502,11.753263),
+    Point(164,79.761502,11.753263),
+    Point(165,79.844,11.9798),
+    Point(166,79.8459,11.9847),
+    Point(167,79.8106,12.0069),
+    Point(168,79.762717,11.754632),
+    Point(169,79.632254,11.870254),
+    Point(170,79.763517,11.764293),
+    Point(171,79.761502,11.753263),
+    Point(172,79.761502,11.753263),
+    Point(173,79.844,11.9798),
+    Point(174,79.8459,11.9847),
+    Point(175,79.8106,12.0069),
+    Point(176,79.762717,11.754632),
+    Point(177,79.632254,11.870254),
+    Point(178,79.765364,11.772796),
+    Point(179,79.738977,11.747252),
+    Point(180,79.761502,11.753263),
+    Point(181,79.844,11.9798),
+    Point(182,79.8459,11.9847),
+    Point(183,79.8106,12.0069),
+    Point(184,79.762717,11.754632),
+    Point(185,79.632254,11.870254),
+    Point(186,79.765364,11.772796),
+    Point(187,79.738977,11.747252),
+    Point(188,79.769327,11.720784),
+    Point(189,79.668209,11.77145),
+    Point(190,79.844,11.9798),
+    Point(191,79.8459,11.9847),
+    Point(192,79.8106,12.0069),
+    Point(193,79.762717,11.754632),
+    Point(194,79.632254,11.870254),
+    Point(195,79.765364,11.772796),
+    Point(196,79.738977,11.747252),
+    Point(197,79.769327,11.720784),
+    Point(198,79.668209,11.77145),
+    Point(199,79.767757,11.714868)
+    ]
+    #Create object
+    dbScan = DBSCAN()
+    #Load data into object
+    dbScan.DB = vecPoint;
+    #Do clustering
+    dbScan.DBSCAN()
+    #Show result cluster  
+    for i in range(len(dbScan.cluster)):
+        print 'Cluster: ', i
+        for j in range(len(dbScan.cluster[i])):
+            print dbScan.cluster[i][j].show()

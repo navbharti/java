@@ -1,0 +1,16 @@
+'''
+Created on Apr 19, 2014
+
+@author: rajni
+'''
+from bs4 import BeautifulSoup
+import urllib
+
+page = urllib.urlopen("http://www.truecaller.com/in/9944393947")
+html = page.read()    
+soup=BeautifulSoup(html)
+table= soup.find('table')
+heading = table.findAll('div', {'id':'result-profile-heading'})
+address = table.findAll('div', {'id':'result-profile-address'})
+print heading
+print address

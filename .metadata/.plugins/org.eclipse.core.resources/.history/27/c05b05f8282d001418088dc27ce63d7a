@@ -1,0 +1,59 @@
+'''
+Created on Aug 26, 2014
+
+@author: rajni
+'''
+from bs4 import BeautifulSoup
+import urllib
+import re
+urls = ['http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/C'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/G'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/K'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/L'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/M'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/N'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/P'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/S'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/T'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/A'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/B'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/D'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/H'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/L'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/M'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/N'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/O'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/P'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/R'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/S'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/T'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/U'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NORTH_AND_MIDDLE_ANDAMAN/W'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/A'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/B'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/C'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/D'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/G'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/H'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/J'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/K'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/M'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/N'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/O'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/P'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/R'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/S'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/T'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/V'
+'http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/SOUTH ANDAMA/W'
+]
+for url in range( len(urls)):
+    print url
+    page = urllib.urlopen(url)
+    html = page.read() 
+    soup=BeautifulSoup(html)
+    links=soup.find("div",{'id':'content'})
+    left= links.find("div",{'class':'left'})
+    articles= left.findAll("a",href=True)
+    for link in articles:
+        print link['href'] + str('/')

@@ -1,0 +1,12 @@
+'''
+Created on Apr 19, 2014
+
+@author: rajni
+'''
+from bs4 import BeautifulSoup
+import urllib
+
+page = urllib.urlopen( "")
+html = page.read()    
+soup=BeautifulSoup(html)
+table = soup.find('table')

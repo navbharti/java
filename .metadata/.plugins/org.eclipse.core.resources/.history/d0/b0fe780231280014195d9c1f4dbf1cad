@@ -1,0 +1,20 @@
+'''
+Created on Aug 20, 2014
+
+@author: rajni
+'''
+from math import sqrt, pow
+
+class DBSCAN:
+    def __init__(self):
+        self.name = 'DBSCAN'
+        self.DB = [] #Database
+        self.esp = 4 #neighborhood distance for search
+        self.MinPts = 2 #minimum number of points required to form a cluster
+        self.cluster_inx = -1
+        self.cluster = []
+        
+    def DBSCAN(self):
+        for i in range(len(self.DB)):
+            p_tmp = self.DB[i]
+            

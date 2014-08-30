@@ -1,0 +1,302 @@
+'''
+Created on Aug 20, 2014
+
+@author: rajni
+'''
+from math import sqrt, pow
+
+class DBSCAN:
+    def __init__(self):
+        self.name = 'DBSCAN'
+        self.DB = [] #Database
+        self.esp = 2 #neighborhood distance for search
+        self.MinPts = 2 #minimum number of points required to form a cluster
+        self.cluster_inx = -1
+        self.cluster = []
+        
+    def DBSCAN(self):
+        for i in range(len(self.DB)):
+            p_tmp = self.DB[i]
+            if (not p_tmp.visited):
+                #for each unvisited point P in dataset
+                p_tmp.visited = True
+                NeighborPts = self.regionQuery(p_tmp)
+                if(len(NeighborPts) < self.MinPts):
+                    #that point is a noise
+                    p_tmp.isnoise = True
+                    print p_tmp.show(), 'is a noise'
+                else:
+                    self.cluster.append([])
+                    self.cluster_inx = self.cluster_inx + 1
+                    self.expandCluster(p_tmp, NeighborPts)
+    
+    def expandCluster(self, P, neighbor_points):
+        self.cluster[self.cluster_inx].append(P)
+        iterator = iter(neighbor_points)
+        while True:
+            try:
+                npoint_tmp = iterator.next()
+            except StopIteration:
+                # StopIteration exception is raised after last element
+                break
+            if (not npoint_tmp.visited):
+                #for each point P' in NeighborPts
+                npoint_tmp.visited = True
+                NeighborPts_ = self.regionQuery(npoint_tmp)
+                if (len(NeighborPts_) >= self.MinPts):
+                    for j in range(len(NeighborPts_)):
+                        neighbor_points.append(NeighborPts_[j])
+            if (not self.checkMembership(npoint_tmp)):
+                #if P' is not yet member of any cluster
+                self.cluster[self.cluster_inx].append(npoint_tmp)
+            else:
+                print npoint_tmp.show(), 'is belonged to some cluster'
+                                    
+    def checkMembership(self, P):
+        #will return True if point is belonged to some cluster
+        ismember = False
+        for i in range(len(self.cluster)):
+            for j in range(len(self.cluster[i])):
+                if (P.x == self.cluster[i][j].x and P.y == self.cluster[i][j].y):
+                    ismember = True
+        return ismember
+    
+    def regionQuery(self, P):
+        #return all points within P's eps-neighborhood, except itself
+        pointInRegion = []
+        for i in range(len(self.DB)):
+            p_tmp = self.DB[i]
+            if (self.dist(P, p_tmp) < self.esp and P.x != p_tmp.x and P.y != p_tmp.y):
+                pointInRegion.append(p_tmp)
+        return pointInRegion
+    
+    def dist(self, p1, p2):
+        #return distance between two point
+        dx = (p1.x - p2.x)
+        dy = (p1.y - p2.y)
+        return sqrt(pow(dx,2) + pow(dy,2))
+    
+class Point:
+    def __init__(self, x = 0, y = 0, visited = False, isnoise = False):
+        self.x = x
+        self.y = y
+        self.visited = False
+        self.isnoise = False
+            
+    def show(self):
+        return self.x, self.y
+    
+if __name__=='__main__':
+    #this is a mocking data just for test
+    #vecPoint = [Point(11,3), Point(10,4), Point(11,5), Point(12,4), Point(13,5), Point(12,6), Point(6,10), Point(8,10), Point(5,12), Point(7,12), Point(16,13), Point(17,14), Point(17,15), Point(18,13), Point(18,16), Point(19,14), Point(19,15), Point(20,17)]
+    vecPoint = Point(1,1),
+    Point(1,2),
+    Point(1,3),
+    Point(1,4),
+    Point(1,5),
+    Point(1,6),
+    Point(1,7),
+    Point(1,8),
+    Point(1,9),
+    Point(1,10),
+    Point(1,11),
+    Point(1,12),
+    Point(1,13),
+    Point(1,14),
+    Point(1,15),
+    Point(1,16),
+    Point(1,17),
+    Point(1,18),
+    Point(1,19),
+    Point(1,20),
+    Point(2,1),
+    Point(2,2),
+    Point(2,3),
+    Point(2,4),
+    Point(2,5),
+    Point(2,6),
+    Point(2,7),
+    Point(2,8),
+    Point(2,9),
+    Point(2,10),
+    Point(2,11),
+    Point(2,12),
+    Point(2,13),
+    Point(2,14),
+    Point(2,15),
+    Point(2,16),
+    Point(2,17),
+    Point(2,18),
+    Point(2,19),
+    Point(2,20),
+    Point(3,1),
+    Point(3,2),
+    Point(3,3),
+    Point(3,4),
+    Point(3,5),
+    Point(3,6),
+    Point(3,7),
+    Point(3,8),
+    Point(3,9),
+    Point(3,10),
+    Point(3,11),
+    Point(3,12),
+    Point(3,13),
+    Point(3,14),
+    Point(3,15),
+    Point(3,16),
+    Point(3,17),
+    Point(3,18),
+    Point(3,19),
+    Point(3,20),
+    Point(4,1),
+    Point(4,2),
+    Point(4,3),
+    Point(4,4),
+    Point(4,5),
+    Point(4,6),
+    Point(4,7),
+    Point(4,8),
+    Point(4,9),
+    Point(4,10),
+    Point(4,11),
+    Point(4,12),
+    Point(4,13),
+    Point(4,14),
+    Point(4,15),
+    Point(4,16),
+    Point(4,17),
+    Point(4,18),
+    Point(4,19),
+    Point(4,20),
+    Point(5,1),
+    Point(5,2),
+    Point(5,3),
+    Point(5,4),
+    Point(5,5),
+    Point(5,6),
+    Point(5,7),
+    Point(5,8),
+    Point(5,9),
+    Point(5,10),
+    Point(5,11),
+    Point(5,12),
+    Point(5,13),
+    Point(5,14),
+    Point(5,15),
+    Point(5,16),
+    Point(5,17),
+    Point(5,18),
+    Point(5,19),
+    Point(5,20),
+    Point(6,1),
+    Point(6,2),
+    Point(6,3),
+    Point(6,4),
+    Point(6,5),
+    Point(6,6),
+    Point(6,7),
+    Point(6,8),
+    Point(6,9),
+    Point(6,10),
+    Point(6,11),
+    Point(6,12),
+    Point(6,13),
+    Point(6,14),
+    Point(6,15),
+    Point(6,16),
+    Point(6,17),
+    Point(6,18),
+    Point(6,19),
+    Point(6,20),
+    Point(7,1),
+    Point(7,2),
+    Point(7,3),
+    Point(7,4),
+    Point(7,5),
+    Point(7,6),
+    Point(7,7),
+    Point(7,8),
+    Point(7,9),
+    Point(7,10),
+    Point(7,11),
+    Point(7,12),
+    Point(7,13),
+    Point(7,14),
+    Point(7,15),
+    Point(7,16),
+    Point(7,17),
+    Point(7,18),
+    Point(7,19),
+    Point(7,20),
+    Point(8,1),
+    Point(8,2),
+    Point(8,3),
+    Point(8,4),
+    Point(8,5),
+    Point(8,6),
+    Point(8,7),
+    Point(8,8),
+    Point(8,9),
+    Point(8,10),
+    Point(8,11),
+    Point(8,12),
+    Point(8,13),
+    Point(8,14),
+    Point(8,15),
+    Point(8,16),
+    Point(8,17),
+    Point(8,18),
+    Point(8,19),
+    Point(8,20),
+    Point(9,1),
+    Point(9,2),
+    Point(9,3),
+    Point(9,4),
+    Point(9,5),
+    Point(9,6),
+    Point(9,7),
+    Point(9,8),
+    Point(9,9),
+    Point(9,10),
+    Point(9,11),
+    Point(9,12),
+    Point(9,13),
+    Point(9,14),
+    Point(9,15),
+    Point(9,16),
+    Point(9,17),
+    Point(9,18),
+    Point(9,19),
+    Point(9,20),
+    Point(10,1),
+    Point(10,2),
+    Point(10,3),
+    Point(10,4),
+    Point(10,5),
+    Point(10,6),
+    Point(10,7),
+    Point(10,8),
+    Point(10,9),
+    Point(10,10),
+    Point(10,11),
+    Point(10,12),
+    Point(10,13),
+    Point(10,14),
+    Point(10,15),
+    Point(10,16),
+    Point(10,17),
+    Point(10,18),
+    Point(10,19),
+    Point(10,20)]    
+    #Create object
+    dbScan = DBSCAN()
+    #Load data into object
+    dbScan.DB = vecPoint;
+    #Do clustering
+    dbScan.DBSCAN()
+    #Show result cluster  
+    for i in range(len(dbScan.cluster)):
+        print 'Cluster: ', i
+        for j in range(len(dbScan.cluster[i])):
+            print dbScan.cluster[i][j].show()

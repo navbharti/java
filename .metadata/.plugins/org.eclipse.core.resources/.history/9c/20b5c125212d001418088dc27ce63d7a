@@ -1,0 +1,17 @@
+'''
+Created on Aug 26, 2014
+
+@author: rajni
+'''
+from bs4 import BeautifulSoup
+import urllib
+
+page = urllib.urlopen("http://pincode.net.in/ANDAMAN_AND_NICOBAR_ISLANDS/NICOBAR/C/")
+html = page.read() 
+soup=BeautifulSoup(html)
+
+body=soup.find('body')
+print body
+#print body
+#heading= body.find('div',{'class':'article'})
+#print heading
