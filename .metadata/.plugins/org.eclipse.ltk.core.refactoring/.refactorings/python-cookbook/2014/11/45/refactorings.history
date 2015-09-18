@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;python-cookbook/soundcloud/test3.py&apos; to &apos;me&apos;" description="Rename resource &apos;test3.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="soundcloud/test3.py" name="me" stamp="1415474392635" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;python-cookbook/soundcloud/me&apos; to &apos;me.py&apos;" description="Rename resource &apos;me&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="soundcloud/me" name="me.py" stamp="1415474405378" updateReferences="true"/>
+</session>

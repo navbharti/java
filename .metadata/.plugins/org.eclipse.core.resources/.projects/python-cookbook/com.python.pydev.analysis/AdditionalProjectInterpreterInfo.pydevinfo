@@ -1,0 +1,25 @@
+-- VERSION_3
+-- START DISKCACHE
+C:\py\.metadata\.plugins\org.eclipse.core.resources\.projects\python-cookbook\com.python.pydev.analysis\v1_indexcache
+.v1_indexcache
+google_geocoder.testGeoCoding|0|C:\py\python-cookbook\google_geocoder\testGeoCoding.py
+geopy.__init__|0|C:\py\python-cookbook\geopy\__init__.py
+test1|0|C:\py\python-cookbook\facebook\test1.py
+geopy.geocoders|0|C:\py\python-cookbook\geopy\geocoders.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=google_geocoder.testGeoCoding
+2=test1
+3=geopy.geocoders
+-- END DICTIONARY
+-- START TREE 1
+4
+geo|1|geolocator!11@
+gra|1|graph!19@
+loc|1|location!11@
+nom|1|Nominatim!25@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,7 @@
+'''
+Created on Feb 16, 2015
+
+@author: rajni
+'''
+
+from geopy.geocoders import Nominatim

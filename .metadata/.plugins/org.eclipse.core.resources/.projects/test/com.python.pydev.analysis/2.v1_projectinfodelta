@@ -1,0 +1,10 @@
+INSTUPnav.bharti.extractWebData
+C:\py\test\nav\bharti\extractWebData.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0
+nav.bharti.extractWebData=2
+address=7
+page=1
+html=3
+table=5
+soup=4
+heading=6

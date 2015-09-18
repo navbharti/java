@@ -1,0 +1,89 @@
+-- VERSION_3
+-- START DISKCACHE
+C:\py\.metadata\.plugins\org.eclipse.core.resources\.projects\pyshp\com.python.pydev.analysis\v1_indexcache
+.v1_indexcache
+shapefile|0|C:\py\pyshp\shapefile.py
+setup|0|C:\py\pyshp\setup.py
+-- END DISKCACHE
+-- START DICTIONARY
+19
+17=Writer.saveShp
+5=Editor
+11=Reader.__shpHeader
+9=Writer.__init__
+15=_ShapeRecord.__init__
+3=Reader
+10=Editor.__init__
+16=Writer.saveShx
+8=_Array
+19=Reader.shapes
+4=Reader.__init__
+13=Reader.load
+7=_ShapeRecord
+14=_Shape.__init__
+1=shapefile
+2=Writer
+12=Writer.saveDbf
+18=Reader.iterShapes
+6=_Shape
+-- END DICTIONARY
+-- START TREE 1
+18
+__v|1|__version__!11@
+_ar|1|_Array!9@
+_sh|2|_Shape!9@_ShapeRecord!9@
+b|1|b!10@
+edi|1|Editor!9@
+is_|1|is_string!10@
+mul|4|MULTIPOINTZ!11@MULTIPOINTM!11@MULTIPOINT!11@MULTIPATCH!11@
+nul|1|NULL!11@
+poi|3|POINT!11@POINTM!11@POINTZ!11@
+pol|6|POLYLINE!11@POLYGONZ!11@POLYLINEM!11@POLYGONM!11@POLYGON!11@POLYLINEZ!11@
+pyt|1|PYTHON3!11@
+rea|1|Reader!9@
+sha|1|ShapefileException!9@
+sig|1|signed_area!10@
+tes|1|test!10@
+u|1|u!10@
+wri|1|Writer!9@
+xra|1|xrange!11@
+-- END TREE
+-- START TREE 2
+36
+__b|1|__bbox!2&10@
+__d|5|__dbfHeader!2&10@__dbfHeader!3&10@__dbfHeaderLength!3&10@__dbfHdrLength!4&11@__dbfRecords!2&10@
+__f|1|__fieldNorm!5&10@
+__g|3|__geo_interface__!6&10@__getFileObj!2&10@__getFileObj!3&10@
+__i|5|__init__!5&10@__init__!2&10@__init__!3&10@__init__!7&10@__init__!6&10@
+__m|1|__mbox!2&10@
+__r|4|__record!3&10@__recordFmt!3&10@__repr__!8&10@__restrictIndex!3&10@
+__s|7|__shxRecords!2&10@__shpFileLength!2&10@__shpRecords!2&10@__shape!3&10@__shpHeader!3&10@__shapeIndex!3&10@__shapefileHeader!2&10@
+__z|1|__zbox!2&10@
+_le|1|_lengths!9&11@
+_of|2|_offsets!9&11@_offsets!4&11@
+_sh|2|_shapes!10&11@_shapes!9&11@
+aut|1|autoBalance!10&11@
+bal|1|balance!5&10@
+bbo|2|bbox!11&11@bbox!2&10@
+dbf|4|dbf!12&11@dbf!9&11@dbf!13&11@dbf!4&11@
+del|2|delete!5&10@deletionFlag!9&11@
+ele|1|elevation!11&11@
+fie|4|fields!10&11@fields!9&11@fields!4&11@field!2&10@
+ite|2|iterShapes!3&10@iterRecords!3&10@
+lin|1|line!2&10@
+loa|1|load!3&10@
+mbo|1|mbox!2&10@
+mea|1|measure!11&11@
+nul|1|null!2&10@
+num|1|numRecords!4&11@
+poi|3|point!5&10@point!2&10@points!14&11@
+pol|1|poly!2&10@
+rec|6|records!10&11@records!9&11@record!2&10@record!3&10@records!3&10@record!15&11@
+sav|4|saveShp!2&10@save!2&10@saveDbf!2&10@saveShx!2&10@
+sel|1|select!5&10@
+sha|14|shapeName!4&11@shapeName!13&11@shape!3&10@shape!2&10@shape!15&11@shapeRecords!3&10@shapeRecord!3&10@shapes!3&10@shapes!2&10@shapeType!16&11@shapeType!17&11@shapeType!14&11@shapeType!11&11@shapeType!9&11@
+shp|8|shpLength!18&11@shpLength!19&11@shpLength!11&11@shpLength!4&11@shp!17&11@shp!9&11@shp!13&11@shp!4&11@
+shx|4|shx!16&11@shx!9&11@shx!13&11@shx!4&11@
+val|1|validate!5&10@
+zbo|1|zbox!2&10@
+-- END TREE

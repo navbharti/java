@@ -1,0 +1,4 @@
+class Nominatim(object):
+    pass
+
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="78" version="2.0">
+<workbench progressCount="70" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="676" x="567" y="31">
 <fastViewData fastViewLocation="1024"/>
@@ -18,6 +18,7 @@
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -25,6 +26,10 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.mylyn.wikitext.ui.editor.markupEditor" itemType="typePlaceholder" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -48,53 +53,152 @@
 <part id="9"/>
 <part id="10"/>
 <part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.python.pydev.editor.PythonEditor" name="bank.py" partName="bank" path="C:/py/test/nav/bharti/bank.py" title="bank" tooltip="test/nav/bharti/bank.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/bharti/bank.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="429" selectionTopPixel="0"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="connection_test.py" partName="connection_test" path="C:/py/python-cookbook/postgresql/connection_test.py" title="connection_test" tooltip="python-cookbook/postgresql/connection_test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/connection_test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="71" selectionOffset="53" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="fileOpening.py" partName="fileOpening" path="C:/py/test/nav/bharti/fileOpening.py" title="fileOpening" tooltip="test/nav/bharti/fileOpening.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/bharti/fileOpening.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="26261" selectionTopPixel="7334"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="create_table.py" partName="create_table" path="C:/py/python-cookbook/postgresql/create_table.py" title="create_table" tooltip="python-cookbook/postgresql/create_table.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/create_table.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="878" selectionTopPixel="103"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="fetchTable.py" partName="fetchTable" path="C:/py/test/nav/bharti/fetchTable.py" title="fetchTable" tooltip="test/nav/bharti/fetchTable.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/bharti/fetchTable.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="298" selectionTopPixel="0"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="insert_data.py" partName="insert_data" path="C:/py/python-cookbook/postgresql/insert_data.py" title="insert_data" tooltip="python-cookbook/postgresql/insert_data.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/insert_data.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="124" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="etractWebTable.py" partName="etractWebTable" path="C:/py/test/nav/bharti/etractWebTable.py" title="etractWebTable" tooltip="test/nav/bharti/etractWebTable.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/bharti/etractWebTable.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4070" selectionTopPixel="721"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="fetching_data.py" partName="fetching_data" path="C:/py/python-cookbook/postgresql/fetching_data.py" title="fetching_data" tooltip="python-cookbook/postgresql/fetching_data.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/fetching_data.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="442" selectionTopPixel="25"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="dbscanDemo.py" partName="dbscanDemo" path="C:/py/test/nav/dbscanDemo.py" title="dbscanDemo" tooltip="test/nav/dbscanDemo.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/dbscanDemo.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="644137" selectionOffset="3885" selectionTopPixel="401003"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="update_data.py" partName="update_data" path="C:/py/python-cookbook/postgresql/update_data.py" title="update_data" tooltip="python-cookbook/postgresql/update_data.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/update_data.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="124" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="testing.py" partName="testing" path="C:/py/test/nav/testing.py" title="testing" tooltip="test/nav/testing.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/testing.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="741692" selectionTopPixel="400664"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="delete_row.py" partName="delete_row" path="C:/py/python-cookbook/postgresql/delete_row.py" title="delete_row" tooltip="python-cookbook/postgresql/delete_row.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/delete_row.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="416" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="kmeans.py" partName="kmeans" path="C:/py/test/nav/kmeans.py" title="kmeans" tooltip="test/nav/kmeans.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/kmeans.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1952" selectionTopPixel="535"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="colocation.py" partName="colocation" path="C:/py/python-cookbook/postgresql/colocation.py" title="colocation" tooltip="python-cookbook/postgresql/colocation.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/colocation.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3999" selectionTopPixel="633"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="kmeans1.py" partName="kmeans1" path="C:/py/test/nav/kmeans1.py" title="kmeans1" tooltip="test/nav/kmeans1.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/kmeans1.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2918" selectionTopPixel="1462"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="colocation1.py" partName="colocation1" path="C:/py/python-cookbook/postgresql/colocation1.py" title="colocation1" tooltip="python-cookbook/postgresql/colocation1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/colocation1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="176" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="temp.py" partName="temp (nav)" path="C:/py/test/nav/temp.py" title="temp (nav)" tooltip="test/nav/temp.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/temp.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="243" selectionTopPixel="0"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="datatest.py" partName="datatest" path="C:/py/python-cookbook/postgresql/datatest.py" title="datatest" tooltip="python-cookbook/postgresql/datatest.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/datatest.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="757" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="point_in_poly.py" partName="point_in_poly" path="C:/py/test/nav/bharti/spatial/point_in_poly.py" title="point_in_poly" tooltip="test/nav/bharti/spatial/point_in_poly.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/bharti/spatial/point_in_poly.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="331" selectionTopPixel="59"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="test.py" partName="test" path="C:/py/python-cookbook/postgresql/test.py" title="test" tooltip="python-cookbook/postgresql/test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="380" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="temp.py" partName="temp (spatial)" path="C:/py/test/nav/bharti/spatial/temp.py" title="temp (spatial)" tooltip="test/nav/bharti/spatial/temp.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test/nav/bharti/spatial/temp.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="93" selectionTopPixel="204"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (postgresql)" path="C:/py/python-cookbook/postgresql/test1.py" title="test1 (postgresql)" tooltip="python-cookbook/postgresql/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="33" selectionOffset="53" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="colocation2.py" partName="colocation2" path="C:/py/python-cookbook/postgresql/colocation2.py" title="colocation2" tooltip="python-cookbook/postgresql/colocation2.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/colocation2.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4577" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (soundcloud)" path="C:/py/python-cookbook/soundcloud/test1.py" title="test1 (soundcloud)" tooltip="python-cookbook/soundcloud/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/soundcloud/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="113" selectionTopPixel="14"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (facebook)" path="C:/py/python-cookbook/facebook/test1.py" title="test1 (facebook)" tooltip="python-cookbook/facebook/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/facebook/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="123" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (wikipedia)" path="C:/py/python-cookbook/wikipedia/test1.py" title="test1 (wikipedia)" tooltip="python-cookbook/wikipedia/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/wikipedia/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="335" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (twitter)" path="C:/py/python-cookbook/twitter/test1.py" title="test1 (twitter)" tooltip="python-cookbook/twitter/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/twitter/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="319" selectionOffset="507" selectionTopPixel="187"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test2.py" partName="test2 (twitter)" path="C:/py/python-cookbook/twitter/test2.py" title="test2 (twitter)" tooltip="python-cookbook/twitter/test2.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/twitter/test2.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="370" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test3.py" partName="test3 (twitter)" path="C:/py/python-cookbook/twitter/test3.py" title="test3 (twitter)" tooltip="python-cookbook/twitter/test3.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/twitter/test3.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2094" selectionTopPixel="255"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test2.py" partName="test2 (soundcloud)" path="C:/py/python-cookbook/soundcloud/test2.py" title="test2 (soundcloud)" tooltip="python-cookbook/soundcloud/test2.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/soundcloud/test2.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="197" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="me.py" partName="me" path="C:/py/python-cookbook/soundcloud/me.py" title="me" tooltip="python-cookbook/soundcloud/me.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/soundcloud/me.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="534" selectionTopPixel="102"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="resolve.py" partName="resolve" path="C:/py/python-cookbook/soundcloud/resolve.py" title="resolve" tooltip="python-cookbook/soundcloud/resolve.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/soundcloud/resolve.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="418" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (google_geocoder)" path="C:/py/python-cookbook/google_geocoder/test1.py" title="test1 (google_geocoder)" tooltip="python-cookbook/google_geocoder/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/google_geocoder/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="417" selectionTopPixel="109"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test4.py" partName="test4" path="C:/py/python-cookbook/twitter/test4.py" title="test4" tooltip="python-cookbook/twitter/test4.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/twitter/test4.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1475" selectionTopPixel="426"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test2.py" partName="test2 (wikipedia)" path="C:/py/python-cookbook/wikipedia/test2.py" title="test2 (wikipedia)" tooltip="python-cookbook/wikipedia/test2.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/wikipedia/test2.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="79" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test5.py" partName="test5" path="C:/py/python-cookbook/twitter/test5.py" title="test5" tooltip="python-cookbook/twitter/test5.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/twitter/test5.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="384" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test2.py" partName="test2 (google_geocoder)" path="C:/py/python-cookbook/google_geocoder/test2.py" title="test2 (google_geocoder)" tooltip="python-cookbook/google_geocoder/test2.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/google_geocoder/test2.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="76" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test6.py" partName="test6" path="C:/py/python-cookbook/twitter/test6.py" title="test6" tooltip="python-cookbook/twitter/test6.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/twitter/test6.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="401" selectionTopPixel="153"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test2.py" partName="test2 (postgresql)" path="C:/py/python-cookbook/postgresql/test2.py" title="test2 (postgresql)" tooltip="python-cookbook/postgresql/test2.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/postgresql/test2.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="71" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test1.py" partName="test1 (mywork)" path="C:/py/pyshp/mywork/test1.py" title="test1 (mywork)" tooltip="pyshp/mywork/test1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pyshp/mywork/test1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="348" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="ex1.py" partName="ex1" path="C:/py/python-cookbook/other/ex1.py" title="ex1" tooltip="python-cookbook/other/ex1.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/python-cookbook/other/ex1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="51" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="shapefile.py" partName="shapefile" path="C:/py/pyshp/shapefile.py" title="shapefile" tooltip="pyshp/shapefile.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pyshp/shapefile.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="266" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -103,6 +207,9 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
+<view id="org.python.pydev.debug.pyunit.pyUnitView" partName="PyUnit">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -128,7 +235,7 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -189,19 +296,16 @@
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
-<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
-<expanded IMemento.internal.id="C:/py/test"/>
-<expanded IMemento.internal.id="C:/py/test/nav"/>
-<expanded IMemento.internal.id="C:/py/test/nav/bharti"/>
-<expanded IMemento.internal.id="C:/py/test/nav/bharti/spatial"/>
-<expanded IMemento.internal.id="C:/py/test/nav/bharti/spatial/temp.py"/>
-<selected IMemento.internal.id="C:/py/test/nav/bharti/spatial/temp.py"/>
+<expanded IMemento.internal.id="C:/py/pyshp"/>
+<expanded IMemento.internal.id="C:/py/pyshp/shapefiles"/>
+<selected IMemento.internal.id="C:/py/pyshp/shapefile.py"/>
 </viewState>
 </view>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.mylyn.tasks.ui.views.tasks" activePerspective="org.python.pydev.ui.PythonPerspective">
+<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="org.python.pydev.ui.PythonPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -354,10 +458,11 @@
 <new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.python.pydev.navigator.view"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="org.python.pydev.debug.pyunit.pyUnitView"/>
+<view id="org.python.pydev.navigator.view"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -377,24 +482,25 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.26273063" ratioLeft="356" ratioRight="999" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.54761904" ratioLeft="345" ratioRight="285" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.17254314" ratioLeft="230" ratioRight="1103" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.62857145" ratioLeft="396" ratioRight="234" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<page content="org.python.pydev.debug.pyunit.pyUnitView" label="PyUnit"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<page content="org.python.pydev.debug.pyunit.pyUnitView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@15f07e3" ratio="0.8997407" ratioLeft="1041" ratioRight="116" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@15f07e3" ratio="0.83459276" ratioLeft="994" ratioRight="197" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -586,165 +692,173 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/dbscanDemo.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/testing.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/bharti/etractWebTable.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/kmeans.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/kmeans1.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/temp.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/bharti/spatial/__init__.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/bharti/spatial/point_in_poly.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/test/nav/bharti/spatial/temp.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/twitter/test6.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/postgresql/colocation.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/postgresql/colocation1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/twitter/test4.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/postgresql/colocation2.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/twitter/test5.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/wikipedia/test2.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/postgresql/test2.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/twitter/test1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/wikipedia/test1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/google_geocoder/test1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/google_geocoder/test2.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/facebook/test1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/pyshp/mywork/test1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/python-cookbook/other/ex1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/pyshp/shapefile.py"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" uri="file:/C:/Python27/Lib/struct.py"/>
 </editors>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3045" y="0"/>
+<item historyLabel="test6" index="0">
+<position info="not_deleted" x="337" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3251" y="0"/>
+<item historyLabel="colocation" index="1">
+<position info="not_deleted" x="432" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="884" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="2036" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="351" y="0"/>
+<item historyLabel="colocation" index="1">
+<position info="not_deleted" x="3999" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3882" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="51" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="3420" y="128"/>
+<item historyLabel="colocation" index="1">
+<position info="not_deleted" x="3999" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="374" y="0"/>
+<item historyLabel="test4" index="3">
+<position info="not_deleted" x="1475" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="741841" y="0"/>
+<item historyLabel="colocation2" index="4">
+<position info="not_deleted" x="10021" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="770" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="176" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3885" y="2305"/>
+<item historyLabel="colocation2" index="4">
+<position info="not_deleted" x="10021" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="741841" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="0" y="9973"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="206" y="0"/>
+<item historyLabel="colocation2" index="4">
+<position info="not_deleted" x="6050" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="388" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="0" y="9973"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="1939" y="0"/>
+<item historyLabel="colocation2" index="4">
+<position info="not_deleted" x="4618" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3885" y="2305"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="261" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3854" y="0"/>
+<item historyLabel="colocation2" index="4">
+<position info="not_deleted" x="4577" y="0"/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3677" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="866" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="1939" y="0"/>
+<item historyLabel="test6" index="0">
+<position info="not_deleted" x="401" y="0"/>
 </item>
-<item historyLabel="etractWebTable" index="2">
-<position info="not_deleted" x="4056" y="52"/>
+<item historyLabel="test5" index="5">
+<position info="not_deleted" x="639" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="2964" y="0"/>
+<item historyLabel="test2 (wikipedia)" index="6">
+<position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="741820" y="0"/>
+<item historyLabel="colocation" index="1">
+<position info="not_deleted" x="3999" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="2251" y="0"/>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="288" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="235" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="357" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="264" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="108" y="0"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="133" y="1"/>
+</item>
+<item historyLabel="test2 (postgresql)" index="7">
 <position/>
 </item>
-<item historyLabel="dbscanDemo" index="0">
-<position info="not_deleted" x="3885" y="644137"/>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="109" y="0"/>
 </item>
-<item historyLabel="testing" index="1">
-<position info="not_deleted" x="741692" y="0"/>
-</item>
-<item historyLabel="kmeans" index="3">
-<position info="not_deleted" x="1799" y="5"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="340" y="0"/>
-</item>
-<item historyLabel="kmeans" index="3">
-<position info="not_deleted" x="1799" y="5"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="340" y="0"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="282" y="0"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="568" y="0"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="1337" y="0"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="4275" y="0"/>
-</item>
-<item historyLabel="kmeans" index="3">
-<position info="not_deleted" x="1799" y="5"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="4275" y="0"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="2868" y="11"/>
-</item>
-<item historyLabel="kmeans" index="3">
-<position info="not_deleted" x="1952" y="0"/>
-</item>
-<item historyLabel="kmeans1" index="4">
-<position info="not_deleted" x="2918" y="0"/>
-</item>
-<item historyLabel="temp (nav)" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="spatial" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="point_in_poly" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="spatial" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="point_in_poly" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="temp (nav)" index="5">
+<item historyLabel="test2 (postgresql)" index="7">
 <position/>
 </item>
-<item historyLabel="temp (nav)" index="5">
-<position info="not_deleted" x="243" y="0"/>
+<item historyLabel="test2 (postgresql)" index="7">
+<position info="not_deleted" x="71" y="0"/>
 </item>
-<item historyLabel="temp (nav)" index="5">
-<position info="not_deleted" x="243" y="0"/>
+<item historyLabel="colocation1" index="2">
+<position info="not_deleted" x="866" y="0"/>
 </item>
-<item historyLabel="point_in_poly" index="7">
-<position info="not_deleted" x="331" y="0"/>
+<item historyLabel="test1 (twitter)" index="8">
+<position info="not_deleted" x="507" y="319"/>
 </item>
-<item historyLabel="temp (spatial)" index="8">
-<position info="not_deleted" x="93" y="9"/>
+<item historyLabel="test1 (wikipedia)" index="9">
+<position info="not_deleted" x="253" y="0"/>
 </item>
-<item historyLabel="point_in_poly" index="7">
-<position info="not_deleted" x="331" y="0"/>
+<item historyLabel="test1 (google_geocoder)" index="10">
+<position info="not_deleted" x="419" y="0"/>
 </item>
-<item active="true" historyLabel="temp (spatial)" index="8">
-<position info="not_deleted" x="93" y="9"/>
+<item historyLabel="test2 (google_geocoder)" index="11">
+<position info="not_deleted" x="226" y="0"/>
+</item>
+<item historyLabel="test1 (google_geocoder)" index="10">
+<position info="not_deleted" x="571" y="0"/>
+</item>
+<item historyLabel="test2 (google_geocoder)" index="11">
+<position info="not_deleted" x="226" y="0"/>
+</item>
+<item historyLabel="test2 (google_geocoder)" index="11">
+<position info="not_deleted" x="310" y="0"/>
+</item>
+<item historyLabel="test1 (google_geocoder)" index="10">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="test2 (google_geocoder)" index="11">
+<position info="not_deleted" x="310" y="0"/>
+</item>
+<item historyLabel="test1 (facebook)" index="12">
+<position info="not_deleted" x="123" y="0"/>
+</item>
+<item historyLabel="test1 (mywork)" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ex1" index="14">
+<position info="not_deleted" x="51" y="0"/>
+</item>
+<item historyLabel="shapefile" index="15">
+<position info="not_deleted" x="228" y="0"/>
+</item>
+<item historyLabel="struct" index="16">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item active="true" historyLabel="shapefile" index="15">
+<position info="not_deleted" x="228" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -772,47 +886,47 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="temp.py" tooltip="test/nav/bharti/spatial/temp.py">
-<persistable path="/test/nav/bharti/spatial/temp.py"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="struct.py" tooltip="C:\Python27\Lib\struct.py">
+<persistable uri="file:/C:/Python27/Lib/struct.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="point_in_poly.py" tooltip="test/nav/bharti/spatial/point_in_poly.py">
-<persistable path="/test/nav/bharti/spatial/point_in_poly.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="shapefile.py" tooltip="pyshp/shapefile.py">
+<persistable path="/pyshp/shapefile.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="test/nav/bharti/spatial/__init__.py">
-<persistable path="/test/nav/bharti/spatial/__init__.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="ex1.py" tooltip="python-cookbook/other/ex1.py">
+<persistable path="/python-cookbook/other/ex1.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="temp.py" tooltip="test/nav/temp.py">
-<persistable path="/test/nav/temp.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test1.py" tooltip="pyshp/mywork/test1.py">
+<persistable path="/pyshp/mywork/test1.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="kmeans1.py" tooltip="test/nav/kmeans1.py">
-<persistable path="/test/nav/kmeans1.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test2.py" tooltip="python-cookbook/postgresql/test2.py">
+<persistable path="/python-cookbook/postgresql/test2.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="kmeans.py" tooltip="test/nav/kmeans.py">
-<persistable path="/test/nav/kmeans.py"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="urllib2.py" tooltip="C:\Python27\Lib\urllib2.py">
+<persistable uri="file:/C:/Python27/Lib/urllib2.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="testing.py" tooltip="test/nav/testing.py">
-<persistable path="/test/nav/testing.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test6.py" tooltip="python-cookbook/twitter/test6.py">
+<persistable path="/python-cookbook/twitter/test6.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="dbscanDemo.py" tooltip="test/nav/dbscanDemo.py">
-<persistable path="/test/nav/dbscanDemo.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test2.py" tooltip="python-cookbook/google_geocoder/test2.py">
+<persistable path="/python-cookbook/google_geocoder/test2.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="etractWebTable.py" tooltip="test/nav/bharti/etractWebTable.py">
-<persistable path="/test/nav/bharti/etractWebTable.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test5.py" tooltip="python-cookbook/twitter/test5.py">
+<persistable path="/python-cookbook/twitter/test5.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="webScrabing.py" tooltip="test/nav/bharti/webScrabing.py">
-<persistable path="/test/nav/bharti/webScrabing.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test2.py" tooltip="python-cookbook/wikipedia/test2.py">
+<persistable path="/python-cookbook/wikipedia/test2.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fetchTable.py" tooltip="test/nav/bharti/fetchTable.py">
-<persistable path="/test/nav/bharti/fetchTable.py"/>
+<file factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="test2.sql" tooltip="python-cookbook/wikipedia/test2.sql">
+<persistable connInfoName="Oracle_10:::" editorInputType="SQLScrapbookEditorInput" path="/python-cookbook/wikipedia/test2.sql"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="networkRequest.py" tooltip="test/nav/bharti/networkRequest.py">
-<persistable path="/test/nav/bharti/networkRequest.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test4.py" tooltip="python-cookbook/twitter/test4.py">
+<persistable path="/python-cookbook/twitter/test4.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="rgnfData.py" tooltip="test/nav/bharti/rgnfData.py">
-<persistable path="/test/nav/bharti/rgnfData.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test1.py" tooltip="python-cookbook/google_geocoder/test1.py">
+<persistable path="/python-cookbook/google_geocoder/test1.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="stocks.py" tooltip="test/nav/bharti/stocks.py">
-<persistable path="/test/nav/bharti/stocks.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="resolve.py" tooltip="python-cookbook/soundcloud/resolve.py">
+<persistable path="/python-cookbook/soundcloud/resolve.py"/>
 </file>
 </mruList>
 </workbench>

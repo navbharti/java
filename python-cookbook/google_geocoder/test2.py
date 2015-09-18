@@ -1,0 +1,15 @@
+'''
+Created on Nov 10, 2014
+
+@author: rajni
+'''
+from googlemaps import GoogleMaps
+
+gmpas = GoogleMaps('AIzaSyAbDuM2exH7RYuoO6P7nKXAR51KcBaXqjQ')
+print gmpas
+address = 'Constitution Ave NW & 10th St NW, Washington, DC'
+print address
+print gmpas.
+'''
+lat, lng = gmpas.address_to_latlng(address)
+'''

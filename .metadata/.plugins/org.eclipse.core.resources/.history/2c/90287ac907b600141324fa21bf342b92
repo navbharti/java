@@ -1,0 +1,11 @@
+'''
+Created on Feb 16, 2015
+
+@author: rajni
+'''
+g = geocoder.google('New York City')
+g.latlng
+[40.7127837, -74.0059413]
+g.state
+'New York'
+g.json
