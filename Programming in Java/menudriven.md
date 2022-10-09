@@ -118,3 +118,5 @@ public class ArithmeticDemo {
 ```
 
 `Question`: Update the Above program to apply looping for the process. Loops exits when option for exiting is given.
+
+`Note`: Complete the Lab Experiment-01 which is based on the same concept.

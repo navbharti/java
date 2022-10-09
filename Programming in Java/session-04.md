@@ -1,0 +1,1 @@
+# Data types: Integers, Floating point, characters, Boolean
